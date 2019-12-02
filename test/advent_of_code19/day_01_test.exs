@@ -4,12 +4,12 @@ defmodule AdventOfCode19.Day01Test do
 
   import AdventOfCode19.Day01
 
-  describe "--- Day 1: The Tyranny of the Rocket Equation - Part One ---"do
+  describe "--- Day 1: The Tyranny of the Rocket Equation - Part One ---" do
     test "matches examples" do
       assert fuel_required_simple(12) == 2
       assert fuel_required_simple(14) == 2
       assert fuel_required_simple(1969) == 654
-      assert fuel_required_simple(100756) == 33583
+      assert fuel_required_simple(100_756) == 33583
     end
 
     @tag disabled: true
@@ -19,11 +19,11 @@ defmodule AdventOfCode19.Day01Test do
     end
   end
 
-  describe "--- Day 1: The Tyranny of the Rocket Equation - Part Two ---"do
+  describe "--- Day 1: The Tyranny of the Rocket Equation - Part Two ---" do
     test "matches examples" do
       assert fuel_required(14) == 2
       assert fuel_required(1969) == 966
-      assert fuel_required(100756) == 50346
+      assert fuel_required(100_756) == 50346
     end
 
     @tag disabled: true
